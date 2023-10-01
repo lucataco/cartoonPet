@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 400px) {
+  .background-gradient::before {
+    background: radial-gradient(
+      30% 40% at 50% 45%,
+      rgba(71, 247, 133, 0.376) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    z-index: -10;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(1);
+    pointer-events: none;
+  }
+}
